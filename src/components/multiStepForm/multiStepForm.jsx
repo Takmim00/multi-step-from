@@ -20,7 +20,7 @@ const MultiStepForm = () => {
       confirmPassword: "",
     })
   
-    
+
   
     const updateFormData = (data) => {
       setFormData((prev) => ({ ...prev, ...data }))
@@ -56,10 +56,7 @@ const MultiStepForm = () => {
               prevStep={prevStep}
             />
           )
-        case 4:
-          return (
-            <FormSummary formData={formData} prevStep={prevStep} handleSubmit={handleSubmit} isSubmitting={isPending} />
-          )
+        
         default:
           return null
       }
