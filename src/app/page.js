@@ -1,3 +1,4 @@
+import MultiStepForm from "@/components/multiStepForm/multiStepForm";
 import { ThemeToggle } from "@/components/themeToggle/themeToggle";
 
 
@@ -10,7 +11,7 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Multi-Step Registration Form</h1>
           <ThemeToggle />
         </div>
-
+    <MultiStepForm/>
       </div>
     </main>
   )
