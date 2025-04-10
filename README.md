@@ -126,9 +126,3 @@ This project is licensed under the MIT License.
 ---
 
 
-
-Made with ❤️ by [Your Name or GitHub handle]
-
-```
-
-Let me know if you want me to create this as a `.md` file and bundle it into a downloadable `.tar` file for you!
