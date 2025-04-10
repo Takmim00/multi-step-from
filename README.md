@@ -1,6 +1,6 @@
-### ✅ `README.md`
 
-```markdown
+
+
 # 🧾 Multi-Step Form with Validation
 
 A responsive, multi-step form built using **Next.js (App Router)**, **React Hook Form**, **Zod**, and **TailwindCSS**. This project includes field-level validation, navigation between steps, data summary before submission, and (optionally) simulated API submission using **React Query**.
@@ -130,7 +130,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 🔗 Connect
+
 
 Made with ❤️ by [Your Name or GitHub handle]
 
