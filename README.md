@@ -107,11 +107,6 @@ You can simulate a form submission using **React Query**:
 1. Enable React Query setup in your form submit handler.
 2. `utils/fakeApi.ts` simulates an API delay and logs submitted data.
 
----
-
-## 📸 Screenshots
-
-> Add screenshots of your form steps and summary here.
 
 ---
 
