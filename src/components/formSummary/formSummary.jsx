@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Loader2 } from "lucide-react";
 
 export default function FormSummary({
   formData,
@@ -63,11 +64,23 @@ export default function FormSummary({
       </div>
 
       <div className="flex flex-col sm:flex-row justify-between gap-3 sm:gap-0">
-        <Button type="button" variant="outline" onClick={prevStep}>
+        <Button
+          type="button"
+          variant="outline"
+          onClick={prevStep}
+          disabled={isSubmitting}
+        >
           Previous
         </Button>
         <Button onClick={handleSubmit} disabled={isSubmitting}>
-          Submitting...
+          {isSubmitting ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Submitting...
+            </>
+          ) : (
+            "Submit"
+          )}
         </Button>
       </div>
     </div>
