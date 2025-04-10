@@ -5,6 +5,7 @@ import AddressDetails from '../addressDetails/addressDetails';
 import AccountSetup from '../accountSetup/accountSetup';
 import PersonalInfo from '../personalInfo/personalInfo';
 import { useMutation } from '@tanstack/react-query';
+import FormSummary from '../formSummary/formSummary';
 
 const MultiStepForm = () => {
     const [step, setStep] = useState(1)
@@ -56,7 +57,10 @@ const MultiStepForm = () => {
               prevStep={prevStep}
             />
           )
-        
+        case 4:
+          return (
+            <FormSummary formData={formData} prevStep={prevStep} handleSubmit={handleSubmit} />
+          )
         default:
           return null
       }

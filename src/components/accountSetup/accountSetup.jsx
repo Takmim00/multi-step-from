@@ -37,7 +37,7 @@ export default function AccountSetup({ formData, updateFormData, nextStep, prevS
         <Input
           id="username"
           {...register("username")}
-          placeholder="johndoe"
+          placeholder="UserName"
           className="dark:bg-gray-700 dark:border-gray-600 dark:text-white"
         />
         {errors.username && <p className="text-red-500 text-sm mt-1">{errors.username.message}</p>}
@@ -51,6 +51,7 @@ export default function AccountSetup({ formData, updateFormData, nextStep, prevS
           id="password"
           type="password"
           {...register("password")}
+          placeholder="Enter your password"
           className="dark:bg-gray-700 dark:border-gray-600 dark:text-white"
         />
         {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
@@ -64,6 +65,7 @@ export default function AccountSetup({ formData, updateFormData, nextStep, prevS
           id="confirmPassword"
           type="password"
           {...register("confirmPassword")}
+          placeholder="Enter your confirm password"
           className="dark:bg-gray-700 dark:border-gray-600 dark:text-white"
         />
         {errors.confirmPassword && <p className="text-red-500 text-sm mt-1">{errors.confirmPassword.message}</p>}
